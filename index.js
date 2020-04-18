@@ -18,8 +18,8 @@ connection.connect();
 
 /* The handler for the DEFAULT route */
 app.get('/', function(req, res){
-  var stmt = 'select country from l9_author';
-    connection.query(stmt, function(error, results) {
+  var blah = 'select country from l9_author';
+    connection.query(blah, function(error, results) {
         if(error) throw error;
         var arr = [];
         results.forEach(function(r) {
